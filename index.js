@@ -3,5 +3,7 @@ const passwordInput = document.getElementById("passwordInput");
 const myH3 = document.getElementById("myH3");
 
 function viewPassword(){
-    myH3.textContent = `Your username is ${usernameInput.value} and your password is ${passwordInput.value}`;
+    if(usernameInput.value != ""){
+        myH3.textContent = `Your username is ${usernameInput.value} and your password is ${passwordInput.value}`;
+    }
 }
